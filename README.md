@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ammar Mustafa — Portfolio
 
-## Getting Started
+Ultra-premium personal portfolio for **Ammar Mustafa**, Full Stack Developer.
 
-First, run the development server:
+Built with **Next.js 16**, TypeScript, Tailwind CSS, Motion, GSAP-ready architecture, MDX, and centralized content data.
+
+## Quick start
+
+```bash
+npm install
+cp .env.example .env.local
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+## Update your content
+
+All portfolio content lives in `src/data/`:
+
+| File | Purpose |
+| --- | --- |
+| `profile.ts` | Name, headline, summary, achievements |
+| `experience.ts` | Roles & responsibilities |
+| `projects.ts` | Project gallery + case studies |
+| `skills.ts` | Technology ecosystem |
+| `services.ts` | Service offerings |
+| `education.ts` | Degrees & coursework |
+| `certifications.ts` | Credential vault |
+| `testimonials.ts` | Client quotes (placeholders ready) |
+| `socials.ts` | Social / hire links |
+| `upwork.ts` / `linkedin.ts` | Profile sections |
+
+Blog posts: `src/content/blog/*.mdx`
+
+## Features
+
+- Cinematic hero + interactive terminal (AmmarOS easter eggs)
+- Command palette (`⌘K` / `Ctrl+K`)
+- Custom desktop cursor (auto-disabled on touch)
+- Project filters + case-study routes
+- Upwork / LinkedIn / GitHub sections
+- Interactive resume
+- SEO: metadata, sitemap, robots, JSON-LD
+- Accessibility: focus states, reduced motion, semantic HTML
+
+## Scripts
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm run start
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Notes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Replace placeholder social URLs in `src/data/socials.ts`
+- Drop your PDF at `public/resume/ammar-mustafa-resume.pdf`
+- Set `NEXT_PUBLIC_GITHUB_USERNAME` for live GitHub stats
+- Do not invent testimonials, employment history, or Upwork metrics
