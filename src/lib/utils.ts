@@ -8,7 +8,7 @@ export function cn(...inputs: ClassValue[]) {
 export function absoluteUrl(path = "") {
   const base =
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-    "https://ammarmustafa.dev";
+    "https://ammarmustafa.netlify.app";
   return `${base}${path.startsWith("/") ? path : `/${path}`}`;
 }
 
